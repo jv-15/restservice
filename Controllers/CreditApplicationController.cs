@@ -40,7 +40,7 @@ namespace CreditApplicationRESTservice.Controllers
 
             Response creditResponse = new Response();
 
-            totalFutureDebt = (creditamount - preexcreditamount) * term;
+            totalFutureDebt = (creditamount + preexcreditamount);
 
             if (creditamount < 2000 || creditamount > 69000)
                 creditResponse.descision = "No";
